@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// 10. Напишите программу , которая принимает на вход
+//     трехзначное число и на выходе показывает вторую 
+//     цифру этого числа. Выполнить с помощью числовых 
+//     операций (целочисленное деление, остаток от деления).
+//   456 -> 5
+//   782 -> 8
+//   918 -> 1
+
+int number = new Random().Next(100, 1000); 
+Console.WriteLine($"Случайное трехзначное число{number}");
+
+int secondDigit = (number / 10 ) % 10;
+
+int digit = secondDigit;
+
+Console.WriteLine($"Вторая цифра числа{digit}");
+
