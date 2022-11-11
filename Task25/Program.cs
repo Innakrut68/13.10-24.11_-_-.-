@@ -9,19 +9,20 @@ int numA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число В");
 int numB = Convert.ToInt32(Console.ReadLine());
 
-int DegreeOfNumber(int numA, int numB);
+int DegreeOfNumber(int numA, int numB)
 {
-    int count = numB;
-    int result = 1;
+    int count = 1;
+    int numC = 1;
     if (numB > 0)
     {
-        result = result * numA;
+        numC = numA * numA;
         count++;
     }
-    return result;
+    return numC;
 }
 
-DegreeOfNumber(result);
+int numC = DegreeOfNumber(numA,numB);
+Console.WriteLine($"Число {numA} в степени {numB}");
 
 
 
